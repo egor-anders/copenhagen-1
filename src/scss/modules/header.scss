@@ -1,0 +1,53 @@
+@import '../variables.scss';
+
+.header {
+  padding: 30px 0;
+  background: $surface;
+  // border-bottom: 2px $surface-bg solid;
+
+  &__logo {
+    width: 149px;
+    height: 42px;
+
+    @media (max-width: 1023px) {
+      width: 130px;
+      height: 42px;
+    }
+  }
+
+  .nav {
+    display: none;
+
+    @media (min-width: 576px) {
+      display: flex;
+    }
+
+    &__item {
+      position: relative;
+      margin-left: 48px;
+      color: $primary;
+      font-weight: 300;
+      font-size: 16px;
+      cursor: pointer;
+
+      @media (max-width: 1023px) {
+        font-size: 14px;
+      }
+
+      &:hover {
+        color: $brand;
+      }
+
+      &_check::after {
+        position: absolute;
+        top: 50%;
+        right: -9px;
+        width: 4px;
+        height: 4px;
+        margin-top: -2px;
+        background: $brand;
+        content: '';
+      }
+    }
+  }
+}

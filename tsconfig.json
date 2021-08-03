@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "lib": ["es6", "esnext", "dom"],
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "removeComments": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "preserveConstEnums": true,
+    "noImplicitAny": true,
+    "sourceMap": false,
+    "baseUrl": ".",
+    "paths": {
+      "src/*": ["./src/*"],
+    },
+    "typeRoots": ["node_modules/@types"],
+    "jsx": "react"
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}

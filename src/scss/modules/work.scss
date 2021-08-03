@@ -1,0 +1,132 @@
+.work {
+  margin-bottom: 120px;
+  padding: 90px 0;
+  background-image: url('../img/copenhagen-bg1.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+
+  @media (max-width: 1365px) {
+    margin-bottom: 90px;
+    padding: 60px 0;
+  }
+
+  @media (max-width: 1023px) {
+    margin-bottom: 60px;
+    padding: 40px 0;
+  }
+
+  @media (max-width: 575px) {
+    margin-bottom: 30px;
+    padding: 20px 0;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    color: #FFFFFF;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    @media (max-width: 575px) {
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-columns: none;
+      gap: 0;
+    }
+  }
+
+  &__link {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    padding: 30px 0;
+    text-decoration: none;
+
+    @media (max-width: 1023px) {
+      width: 300px;
+    }
+
+    @media (max-width: 767px) {
+      width: 250px;
+    }
+
+    @media (max-width: 575px) {
+      padding: 20px 0;
+    }
+  }
+
+  &__subtitle {
+    margin: 0;
+    margin-bottom: 16px;
+    padding: 12px 12px 10px 12px;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: 'Kelson Sans', sans-serif;
+    letter-spacing: 0.06rem;
+    text-transform: uppercase;
+    background-color: #DF3127;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: #000000;
+    }
+
+    @media (max-width: 767px) {
+      font-size: 12px;
+    }
+  }
+
+  &__descr {
+    margin: 0;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-family: 'Kelson Sans', sans-serif;
+    letter-spacing: 0.06rem;
+    text-transform: uppercase;
+
+    @media (max-width: 767px) {
+      font-size: 12px;
+    }
+  }
+
+  &__picture {
+    width: 353px;
+    height: 177px;
+    margin-bottom: 16px;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+
+    @media (max-width: 1023px) {
+      width: 283px;
+      height: 142px;
+    }
+
+    @media (max-width: 767px) {
+      width: 218px;
+      height: 109px;
+    }
+
+    &--palazzo {
+      background-image: url('../img/portfolio/palazzo.jpg');
+    }
+
+    &--skoda {
+      background-image: url('../img/portfolio/skoda.jpg');
+    }
+  }
+}

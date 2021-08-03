@@ -1,0 +1,41 @@
+.who-we-are {
+  margin-bottom: 120px;
+
+  @media (max-width: 1365px) {
+    margin-bottom: 90px;
+  }
+
+  @media (max-width: 1023px) {
+    margin-bottom: 60px;
+  }
+
+  @media (max-width: 575px) {
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    margin-bottom: 16px;
+  }
+
+  &__paragraph {
+    margin-bottom: 24px;
+  }
+
+  &__text {
+    max-width: 700px;
+    margin-bottom: 48px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 34px;
+    text-align: center;
+
+    @media (max-width: 1023px) {
+      font-size: 16px;
+    }
+
+    @media (max-width: 575px) {
+      margin-bottom: 20px;
+      font-size: 14px;
+    }
+  }
+}

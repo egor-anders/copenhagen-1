@@ -1,0 +1,182 @@
+@import '~normalize.css/normalize.css';
+@import '~aos/src/sass/aos.scss';
+@import './tachyons/_flexbox.css';
+@import 'variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@300;400;600;700&display=swap');
+
+.button {
+  width: 320px;
+  height: 80px;
+  color: $surface;
+  font-weight: 300;
+  font-size: 17px;
+  font-family: 'Kelson Sans', sans-serif;
+  line-height: 80px;
+  letter-spacing: 0.06rem;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #090909;
+  outline: 0;
+
+  &:hover {
+    background-color: #373737;
+  }
+
+  @media (max-width: 1365px) {
+    width: 240px;
+  }
+
+  @media (max-width: 1023px) {
+    width: 170px;
+    height: 65px;
+    font-size: 15px;
+    line-height: 65px;
+  }
+
+  @media (max-width: 767px) {
+    width: 130px;
+    height: 45px;
+    font-size: 12px;
+    line-height: 45px;
+  }
+}
+
+@import './modules/container.scss';
+@import './modules/header.scss';
+@import './modules/intro.scss';
+@import './modules/skills.scss';
+@import './modules/who-we-are.scss';
+@import './modules/social-aside.scss';
+@import './modules/lets.scss';
+@import './modules/work.scss';
+@import './modules/modal.scss';
+@import './modules/checkboxes.scss';
+@import './modules/footer.scss';
+@import './modules/mobile-menu.scss';
+
+@font-face {
+  font-weight: 300;
+  font-family: 'Kelson Sans';
+  src: url('../fonts/KelsonSans/KelsonSans-Light.woff2') format('woff2');
+}
+
+@font-face {
+  font-weight: normal;
+  font-family: 'Kelson Sans';
+  src: url('../fonts/KelsonSans/KelsonSans-Normal.woff2') format('woff2');
+}
+
+@font-face {
+  font-weight: bold;
+  font-family: 'Kelson Sans';
+  src: url('../fonts/KelsonSans/KelsonSans-Bold.woff2') format('woff2');
+}
+
+body {
+  height: 300vh;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 36px;
+  font-family: 'Kelson Sans', sans-serif;
+  letter-spacing: 0.06rem;
+  text-transform: uppercase;
+
+  @media (max-width: 1023px) {
+    font-size: 28px;
+  }
+
+  @media (max-width: 575px) {
+    font-size: 24px;
+  }
+}
+
+.button-inline {
+  color: $primary;
+  font-size: 17px;
+  font-family: 'Kelson Sans', sans-serif;
+  letter-spacing: 0.06rem;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: underline;
+  outline: 0;
+
+  &:hover {
+    color: #373737;
+  }
+
+  @media (max-width: 1023px) {
+    font-size: 15px;
+  }
+}
+
+.paragraph {
+  position: relative;
+  width: 2px;
+  height: 22px;
+  margin-top: 12px;
+  background-color: $brand;
+
+  &::before {
+    position: absolute;
+    top: -12px;
+    left: -5px;
+    box-sizing: border-box;
+    width: 12px;
+    height: 12px;
+    border: 3px $brand solid;
+    content: '';
+  }
+
+  &::after {
+    position: absolute;
+    bottom: -8px;
+    left: -3px;
+    width: 8px;
+    height: 8px;
+    background-color: $brand;
+    content: '';
+  }
+}
+
+.separator {
+  width: 100%;
+  height: 2px;
+  margin-bottom: 120px;
+  background-color: #E0E1F1;
+
+  @media (max-width: 1365px) {
+    margin-bottom: 90px;
+  }
+
+  @media (max-width: 1023px) {
+    margin-bottom: 60px;
+  }
+
+  @media (max-width: 575px) {
+    margin-bottom: 30px;
+  }
+}
+
+
+fieldset {
+  margin-bottom: 30px;
+  padding: 0;
+  border: none;
+}
+
+input {
+  padding: 0;
+}

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <title>IT Copenhagen</title>
+</head>
+
+<body>
+  <aside class="social-aside">
+    <ul class="social-aside__nav">
+      <li class="social-aside__icon social-aside__icon_facebook">
+        <a href="#!"></a>
+      </li>
+      <li class="social-aside__icon social-aside__icon_mail">
+        <a href="#!"></a>
+      </li>
+      <li class="social-aside__icon social-aside__icon_phone">
+        <a href="#!"></a>
+      </li>
+    </ul>
+  </aside>
+  <aside class="modal modal--opened">
+    <div class="modal__shadow"></div>
+    <div class="modal__wrapper">
+      <div class="modal__inner">
+        <button class="modal__close"><svg width="16" height="16" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11 1L1 11M1 1L11 11" stroke="#626262" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+        <div class="modal__content">
+          <h5 class="modal__title">Tell us</h5>
+          <p class="modal__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <form action="#" method="POST" class="modal__form">
+            <fieldset class="field-name">
+              <input type="text" placeholder="Your name" class="modal__input modal__input--name" name="name" required>
+            </fieldset>
+            <fieldset class="field-email">
+              <input type="email" placeholder="Your email" class="modal__input modal__input--email" name="email" required>
+            </fieldset>
+            <fieldset class="field-check">
+              <legend class="modal__primary modal__input">I'm interested in...</legend>
+              <div class="checkboxes">
+                <div class="checkboxes__wrapper">
+                  <input type="checkbox" id="front-end" class="checkboxes__item" value="frontend" name="interests">
+                  <label for="front-end">Front-end development</label>
+                </div>
+                <div class="checkboxes__wrapper">
+                  <input type="checkbox" id="design" class="checkboxes__item" value="design" name="interests">
+                  <label for="design">Design</label>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="field-message">
+              <input name="message" id="message" class="modal__input modal__message" required placeholder="Tell us about your project"></input>
+            </fieldset>
+            <button class="button modal__send">send a request</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </aside>
+  <aside class="mobile-menu">
+    <nav class="mobile-menu__nav">
+      <!-- mobile-menu__item--active active class! -->
+      <a href="#!" class="mobile-menu__item mobile-menu__item--active">home</a>
+      <a href="#!" class="mobile-menu__item">About</a>
+      <a href="#!" class="mobile-menu__item">Services</a>
+      <a href="#!" class="mobile-menu__item">Contacts</a>
+      <button class="button mobile-menu__send">send a request</button>
+    </nav>
+    <div class="mobile-menu__close"><svg width="16" height="16" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M11 1L1 11M1 1L11 11" stroke="#626262" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+      </svg></div>
+  </aside>
+  <div class="blur-wrapper">
+    <header class="header" data-aos="fade-down" data-aos-delay="200">
+      <div class="container flex flex-row items-center justify-between">
+        <img src="./img/logo-black.svg" alt="" class="header__logo">
+        <nav class="nav flex flex-row">
+          <div class="nav__item">ABOUT</div>
+          <div class="nav__item nav__item_check">SERVICES</div>
+          <div class="nav__item">CONTACTS</div>
+        </nav>
+        <button class="mobile-menu__button"></button>
+      </div>
+    </header>
+    <section class="intro">
+      <div class="container flex flex-column items-center">
+        <div class="flex flex-column items-center rellax" data-rellax-speed="6">
+          <h1 class="intro__row intro__row_1 flex flex-row items-center" data-aos="fade-down" data-aos-duration="600">
+            <span class="intro__text">MAKING</span>
+            <div class="intro__brand">
+              <span>WEBSITES</span>
+            </div>
+          </h1>
+          <h2 class="intro__row intro__row_2 flex flex-row items-center" data-aos="fade-down" data-aos-delay="100" data-aos-duration="600">
+            <span class="intro__text">WORKING FOR YOUR</span>
+            <div class="intro__brand">
+              <span>BUSINESS</span>
+            </div>
+          </h2>
+        </div>
+        <span class="intro__desc">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Nullam lorem velit, consectetur egestas ultrices facilisis, finibus id augue.
+          Nulla varius ligula metus, sit amet dapibus lectus ultricies ac. Duis euismod nisl ut velit dictum, sit amet.
+          Ut rhoncus lacus sed cursus mollis. Aliquam diam nisi, finibus et vestibulum et, pharetra vel elit.
+        </span>
+        <div class='intro__scroll-icon'></div>
+      </div>
+    </section>
+    <section class="skills">
+      <div class="container flex flex-row justify-between skills__container">
+        <div class="flex flex-column skills__about rellax" data-rellax-speed="-4.5">
+          <h3 class="skills__title title">SKILLS</h3>
+          <span class="skills__text">We build identities and experiences to elevate and empower organizations.</span>
+          <a href="#1" class="button skills__button">GET PRICES</a>
+        </div>
+        <div class="flex flex-column" data-aos="fade-left" data-aos-offset="200">
+          <div class="flex flex-row flex-wrap">
+            <div class="skill flex flex-column items-center">
+              <span class="skill__title">WORDPRESS</span>
+              <img src="./img/skills/wordpress.png" alt="" class="skill__img">
+              <span class="skill__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit elit elit. Phasellus sed risus vel justo laoreet
+              </span>
+            </div>
+            <div class="skill flex flex-column items-center">
+              <span class="skill__title">HTML / CSS / JS</span>
+              <img src="./img/skills/css3.png" alt="" class="skill__img">
+              <span class="skill__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit elit elit. Phasellus sed risus vel justo laoreet
+              </span>
+            </div>
+          </div>
+          <div class="flex flex-row flex-wrap">
+            <div class="skill flex flex-column items-center">
+              <span class="skill__title">REACT.JS</span>
+              <img src="./img/skills/react.png" alt="" class="skill__img">
+              <span class="skill__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit elit elit. Phasellus sed risus vel justo laoreet
+              </span>
+            </div>
+            <div class="skill flex flex-column items-center">
+              <span class="skill__title">NODE.JS</span>
+              <img src="./img/skills/nodejs.png" alt="" class="skill__img">
+              <span class="skill__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit elit elit. Phasellus sed risus vel justo laoreet
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="who-we-are">
+      <div class="container flex flex-column items-center" data-aos="fade" data-aos-offset="100" data-aos-duration="300">
+        <h3 class="title who-we-are__title">WHO WE ARE</h3>
+        <div class="paragraph who-we-are__paragraph"></div>
+        <span class="who-we-are__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Nullam lorem velit, consectetur egestas ultrices facilisis, finibus id augue.
+          Nulla varius ligula metus, sit amet dapibus lectus ultricies ac. Duis euismod nisl ut velit dictum, sit amet.
+          Ut rhoncus lacus sed cursus mollis. Aliquam diam nisi, finibus et vestibulum et, pharetra vel elit.
+        </span>
+        <a href="#1" class="button-inline who-we-are__link">MORE ABOUT US</a>
+      </div>
+    </section>
+    <section class="work">
+      <div class="container work__container" data-aos="fade" data-aos-offset="100" data-aos-duration="300">
+        <h3 class="title work__title">work</h3>
+        <ul class="work__list" data-aos="fade-up" data-aos-offset="200">
+          <li class="work__item">
+            <a href="" class="work__link">
+              <div class="work__picture work__picture--skoda"></div>
+              <h4 class="work__subtitle">Skoda Superb</h4>
+              <p class="work__descr">
+                design, front-end
+              </p>
+            </a>
+          </li>
+          <li class="work__item">
+            <a href="" class="work__link">
+              <div class="work__picture work__picture--palazzo"></div>
+              <h4 class="work__subtitle">Studio Palazzo</h4>
+              <p class="work__descr">
+                front-end
+              </p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="lets" data-aos='action-slide' data-aos-offset="200" data-aos-once="true">
+      <div class="container">
+        <div class="lets__button flex flex-row">
+          <div class="lets__button-wrap flex flex-row items-center">
+            <span class="lets__text">LET'S START</span>
+            <img class="lets__icon" src="./img/arrow-right.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <div class="separator"></div>
+    </div>
+    <footer class="footer">
+      <div class="container footer__container">
+        <section class="footer-top">
+          <div class="footer-call">
+            <h3 class="footer-call__title">Ready to make something amazing?</h3>
+            <p class="footer-call__descr">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt, impedit!</p>
+            <button class="footer-call__button button">send a request</button>
+          </div>
+          <div class="footer-contacts">
+            <h3 class="footer-contacts__title footer__title">Contact</h3>
+            <address class="footer-contacts__address">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id reprehenderit nemo sit dolore placeat pariatur.</address>
+            <p class="footer-contacts__email">mail: <a href="mailto:odsakk@gmail.com" target="_blank">odsakk@gmail.com</a></p>
+            <p class="footer-contacts__phone">phone: <a href="tel:+98778974" target="_blank">+98778974</a></p>
+          </div>
+          <div class="footer-nav">
+            <h3 class="footer-nav__title footer__title">Navigation</h3>
+            <ul class="footer-nav__list">
+              <li class="footer-nav__item footer-nav__item--active">
+                <a href="#!">home</a>
+              </li>
+              <!-- footer-nav__item--active active class! -->
+              <li class="footer-nav__item">
+                <a href="#!">about</a>
+              </li>
+              <li class="footer-nav__item">
+                <a href="#!">services</a>
+              </li>
+              <li class="footer-nav__item">
+                <a href="#!">contacts</a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="footer-bottom">
+          <div class="footer-logo">
+            <img src="img/logo-black.svg" alt="">
+          </div>
+          <div class="footer-links">
+            <ul class="footer-links__list">
+              <li class="footer-links__item footer-links__item--fb"><a href="#!" target="_blank" aria-label=""></a></li>
+              <li class="footer-links__item footer-links__item--phone"><a href="#!" target="_blank" aria-label=""></a></li>
+              <li class="footer-links__item footer-links__item--mail"><a href="#!" target="_blank" aria-label=""></a></li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
